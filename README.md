@@ -1,7 +1,7 @@
 🎴 Kuto-Ruta – Karuta-Style React Quiz Game  
 A simple and modern React-based game inspired by traditional Japanese *karuta*, designed to help beginners learn through multiple-choice quizzes.
 
-🔗 Live Site 👉 https://kuto-ruta.vercel.app/
+🔗 Live Site 👉 https://kuto-ruta-5ci4sgr4c-fukos-projects-99e07d1b.vercel.app/
 
 🛠️ Built With  
 - React + Vite  
