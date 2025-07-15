@@ -23,7 +23,6 @@ This project was created to:
 - Simple flow: Start → Quiz → Results → Answer Review  
 - One-page layout using React routing/state  
 - Mobile and desktop friendly  
-- Lightweight and fast with custom illustrations
 
 👤 Author  
 Fuko（@fa417）  
