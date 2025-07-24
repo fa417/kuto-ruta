@@ -177,7 +177,7 @@ export const questions = [
             { text: "useState", isCorrect: false },
             { text: "useRender", isCorrect: false },
         ],
-    explanation: "useEffectは、Reactコンポーネントで副作用（データの取得、DOMの操作、タイマー設定など）を処理するためのフックです。コンポーネントのライフ    
+        explanation: "useEffectは、Reactコンポーネントで副作用（データの取得、DOMの操作、タイマー設定など）を処理するためのフックです。コンポーネントのライフサイクルに合わせて動作します。"
     },
     {
         text: "Reactとは何ですか？",
