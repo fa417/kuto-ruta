@@ -34,8 +34,8 @@ function GameStart({ setPage, setRandomQuestion, setCountIndex, setCountNumber }
                 <div className="game-detail">
                     <h2 className="category-title">遊び方</h2>
                     <p>
-                        表示されたヒント（お題）に当てはまる「くとルタ札」をタッチしよう！<br />
-                        正解すると札がゲットできるよ！<br />
+                        表示されたヒント（お題）に当てはまる「くとルタ札」をタッチしよう！<br className="sp-br" />
+                        正解すると札がゲットできるよ！<br className="sp-br" />
                         すべての札を集めるとクリア！
                     </p>
                 </div>
