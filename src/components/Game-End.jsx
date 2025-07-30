@@ -3,7 +3,7 @@ import { questions } from '../data/questions';
 
 
 function GameEnd({ countNumber, setPage, setCountIndex, setCountNumber, setRandomQuestion }) {
-  const total = 2;
+  const total = 20;
   const notEarned = total - countNumber;
 
   const retry = () => {
