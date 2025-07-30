@@ -53,7 +53,7 @@ function GameEnd({ countNumber, setPage, setCountIndex, setCountNumber, setRando
           </div>
 
           <div className="result-all-banner">
-            <span style={{ fontSize: '16px' }}>2枚</span>/{countNumber}枚獲得
+            <span style={{ fontSize: '16px' }}>20枚</span>/{countNumber}枚獲得
           </div>
 
           <div className="game-links">
