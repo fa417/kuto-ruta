@@ -16,7 +16,7 @@ function GameStart({ setPage, setRandomQuestion, setCountIndex, setCountNumber }
     }, []);
 
     const startBtn = () => {
-        const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 2);
+        const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 20);
         setRandomQuestion(shuffled);
         setCountIndex(0);
         setCountNumber(0);
