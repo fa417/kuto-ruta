@@ -3,15 +3,16 @@ import { questions } from '../data/questions';
 
 
 function GameStart({ setPage, setRandomQuestion, setCountIndex, setCountNumber }) {
+    const [showBackLink, setshowBackLink] = useState(false);
+
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
         const from = params.get('from');
         const isFromPortfolio = from === 'portfolio';
         const isSP = window.matchMedia('(max-width:768px)').matches;
 
-        const backLink = document.getElementById('back-home');
-        if (backLink && isFromPortfolio && isSP) {
-            backLink.style.display = 'block';
+        if(isFromPortfolio && isSP){
+            setshowBackLink(true);
         }
     }, []);
 
@@ -46,7 +47,9 @@ function GameStart({ setPage, setRandomQuestion, setCountIndex, setCountNumber }
                     <p>&copy; くとルタ制作局</p>
                 </footer>
             </div>
-            <a href="https://fuko-portfolio.vercel.app/html/java-ruta.html" id="back-home" style={{ display: 'none' }}>←</a >
+            {showBackLink && (
+                <a href="https://fuko-portfolio.vercel.app/html/kuto-ruta.html" className="home-link" id="back-home">←</a >
+            )}
         </>
     )
 }
