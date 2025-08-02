@@ -11,6 +11,18 @@ function App() {
   const [randomQuestion, setRandomQuestion] = useState([]);
   const [countIndex, setCountIndex] = useState(0);
   const [countNumber, setCountNumber] = useState(0);
+  const [showBackLink, setshowBackLink] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from');
+    const isFromPortfolio = from === 'portfolio';
+    const isSP = window.matchMedia('(max-width:768px)').matches;
+
+    if (isFromPortfolio && isSP) {
+      setshowBackLink(true);
+    }
+  }, []);
 
   return (
     <>
@@ -62,6 +74,10 @@ function App() {
           setCountIndex={setCountIndex}
           setCountNumber={setCountNumber}
         />
+      )}
+
+      {showBackLink && (
+        <a href="https://fuko-portfolio.vercel.app/html/kuto-ruta.html" className="home-link" id="back-home">←</a >
       )}
     </>
   )

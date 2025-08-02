@@ -3,18 +3,6 @@ import { questions } from '../data/questions';
 
 
 function GameStart({ setPage, setRandomQuestion, setCountIndex, setCountNumber }) {
-    const [showBackLink, setshowBackLink] = useState(false);
-
-    useEffect(() => {
-        const params = new URLSearchParams(window.location.search);
-        const from = params.get('from');
-        const isFromPortfolio = from === 'portfolio';
-        const isSP = window.matchMedia('(max-width:768px)').matches;
-
-        if(isFromPortfolio && isSP){
-            setshowBackLink(true);
-        }
-    }, []);
 
     const startBtn = () => {
         const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 20);
@@ -47,9 +35,7 @@ function GameStart({ setPage, setRandomQuestion, setCountIndex, setCountNumber }
                     <p>&copy; くとルタ制作局</p>
                 </footer>
             </div>
-            {showBackLink && (
-                <a href="https://fuko-portfolio.vercel.app/html/kuto-ruta.html" className="home-link" id="back-home">←</a >
-            )}
+           
         </>
     )
 }
