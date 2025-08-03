@@ -613,7 +613,8 @@
     padding: 20px;
   }
 
-  .result-incorrect-banner {
+  .result-incorrect-banner,
+  .result-correct-banner {
     width: 70%;
   }
 
