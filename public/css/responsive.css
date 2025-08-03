@@ -120,8 +120,8 @@
     font-size: var(--font-size-24px);
   }
 
-  .result-correct-banner,
-  .result-incorrect-banner {
+  .result-incorrect-banner,
+  .result-correct-banner {
     width: 90%;
   }
 
@@ -353,7 +353,8 @@
     padding: 20px;
   }
 
-  .result-incorrect-banner {
+  .result-incorrect-banner,
+  .result-correct-banner {
     width: 80%;
   }
 
